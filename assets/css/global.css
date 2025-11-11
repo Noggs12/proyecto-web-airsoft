@@ -65,6 +65,18 @@ a:hover, a:focus { text-decoration: underline; }
   margin: 0 auto;
 }
 
+/* Espaciado y tipografía de secciones */
+main section {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border);
+}
+main section:last-of-type {
+  border-bottom: 0;
+}
+.site-header + * section:first-of-type {
+  padding-top: var(--space-4);
+}
+
 /* Header i nav sticky amb Flex */
 .site-header {
   position: sticky; /* requerit per rúbrica */
@@ -73,6 +85,7 @@ a:hover, a:focus { text-decoration: underline; }
   background: var(--bg);
   border-bottom: 1px solid var(--border);
   backdrop-filter: saturate(170%) blur(6px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
 }
 .header-inner {
   display: flex; /* Flex en nav */
@@ -172,6 +185,11 @@ a:hover, a:focus { text-decoration: underline; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--space-2);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
 }
 
 /* Llistes */
@@ -179,6 +197,15 @@ a:hover, a:focus { text-decoration: underline; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-2);
+}
+
+/* Guía en home */
+.guide ul {
+  margin: 0.5rem 0 1.25rem;
+  padding-left: 1.25rem;
+}
+.guide h3 {
+  margin-top: 1rem;
 }
 
 /* Taules */
