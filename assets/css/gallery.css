@@ -1,0 +1,40 @@
+/* Estils específics per a gallery.html (CSS Grid) */
+.gallery-grid {
+  display: grid; /* Ús de Grid per a la rúbrica */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+.gallery-grid figure {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.gallery-grid figcaption {
+  font-size: 0.95rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid .hide-on-small {
+    display: none; /* imatge amagada en pantalles xicotetes */
+  }
+}
+
+

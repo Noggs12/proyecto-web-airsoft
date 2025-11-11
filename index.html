@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Nom de l'autor/a" />
+    <meta name="description" content="Guía de información sobre Airsoft: normas, equipo, modalidades y seguridad." />
+    <title>Inicio · Airsoft Info</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <!-- CSS global compartit -->
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <!-- CSS específic de la pàgina -->
+    <link rel="stylesheet" href="assets/css/home.css" />
+  </head>
+  <body>
+    <!-- Header amb nav sticky i horitzontal -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Airsoft Info</a>
+        <nav class="site-nav" aria-label="Navegación principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li>
+              <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo oscuro">
+                🌓
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <!-- Secció hero amb imatge (element multimèdia) -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Descubre el Airsoft</h1>
+          <p>
+            Todo lo que necesitas para empezar: <strong>normas de seguridad</strong>,
+            <em>equipo básico</em>, modalidades de juego y consejos para principiantes.
+          </p>
+          <a class="btn" href="about.html">Empezar</a>
+        </div>
+        <figure class="hero-media">
+          <!-- Imatge que desapareix en pantalles xicotetes via media query -->
+          <img src="/assets/img/principal.webp" alt="Jugador de airsoft con equipo de protección" />
+          <figcaption>Práctica segura y responsable</figcaption>
+        </figure>
+      </section>
+
+      <!-- Guía resumida de Airsoft -->
+      <section class="guide">
+        <h2>Guía rápida de Airsoft</h2>
+        <p>
+          El airsoft es un deporte de acción con réplicas realistas que disparan bolas BB de 6&nbsp;mm a baja velocidad.
+          Nació en Japón en los 70 y hoy reúne a una gran comunidad global. Con equipo adecuado y normas,
+          es una actividad segura, táctica y muy social.
+        </p>
+
+        <h3>¿Qué lo hace único?</h3>
+        <ul>
+          <li><strong>Realismo</strong>: réplicas y equipamiento muy fieles a los originales.</li>
+          <li><strong>Trabajo en equipo y estrategia</strong>: comunicación, roles y planes.</li>
+          <li><strong>Variedad</strong>: partidas rápidas, objetivos, y eventos MilSim.</li>
+          <li><strong>Personalización</strong>: mejoras internas/externas y configuración del equipo.</li>
+          <li><strong>Comunidad</strong>: clubs, campos y eventos con gran ambiente.</li>
+        </ul>
+
+        <h3>Términos básicos</h3>
+        <ul>
+          <li><strong>AEG</strong>: réplica eléctrica por batería (la más común).</li>
+          <li><strong>GBBR</strong>: réplica a gas con retroceso; más realismo, más mantenimiento.</li>
+          <li><strong>Muelle</strong>: accionamiento manual (p. ej., rifles de francotirador).</li>
+          <li><strong>HPA</strong>: aire a alta presión, muy configurable (requiere botella externa).</li>
+          <li><strong>MilSim</strong>: simulación militar con objetivos y cadena de mando.</li>
+          <li><strong>CQB</strong>: combate cercano en interiores/urbano.</li>
+          <li><strong>FPS</strong>: velocidad de salida de la BB; los campos fijan límites.</li>
+          <li><strong>Hop-Up</strong>: efecto de giro que mejora alcance y precisión.</li>
+          <li><strong>Loadout</strong>: conjunto de equipo que lleva el jugador.</li>
+          <li><strong>Hi-Cap/Mid-Cap</strong>: tipos de cargadores (alta/mediana capacidad).</li>
+        </ul>
+
+        <h3>¿Quién juega y por qué?</h3>
+        <ul>
+          <li><strong>Perfil</strong>: desde adolescentes con permiso hasta adultos; muy diverso.</li>
+          <li><strong>Motivaciones</strong>: comunidad, estrategia, realismo, forma física y variedad.</li>
+        </ul>
+
+        <h3>¿Es peligroso?</h3>
+        <ul>
+          <li><strong>Protección</strong>: gafas homologadas (obligatorias) y facial recomendable.</li>
+          <li><strong>Normas</strong>: respeta potencias, distancias y reglas del campo.</li>
+          <li><strong>Manejo</strong>: trata la réplica con responsabilidad y dedo fuera del gatillo.</li>
+          <li><strong>Juego limpio</strong>: respeto y deportividad mantienen la seguridad.</li>
+        </ul>
+      </section>
+      <!-- Secció amb Flexbox per a targetes -->
+      <section class="features">
+        <h2>Qué encontrarás aquí</h2>
+        <div class="card-row">
+          <article class="card">
+            <h3>Seguridad</h3>
+            <p>Gafas homologadas, zonas seguras, potencias y distancias mínimas.</p>
+          </article>
+          <article class="card">
+            <h3>Equipo</h3>
+            <p>Réplicas, bolas <em>BB</em>, baterías, protección facial e indumentaria.</p>
+          </article>
+          <article class="card">
+            <h3>Modalidades</h3>
+            <p>Domination, Milsim, CQB y escenarios cooperativos para todos los niveles.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Llistats ul i ol -->
+      <section class="lists">
+        <h2>Checklists rápidos</h2>
+        <div class="lists-grid">
+          <div>
+            <h3>Equipo básico (ul)</h3>
+            <ul>
+              <li>Gafas/antiparras de protección</li>
+              <li>Réplica y cargadores</li>
+              <li>BBs de calidad</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Primer día (ol)</h3>
+            <ol>
+              <li>Lee las normas del campo</li>
+              <li>Ajusta potencia y cronógrafo</li>
+              <li>Hidratación y calentamiento</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Airsoft Info</small>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+

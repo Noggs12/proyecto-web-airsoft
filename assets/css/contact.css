@@ -1,0 +1,19 @@
+/* Estils específics per a contact.html */
+.contact-form {
+  max-width: 620px;
+  margin: 1rem 0 2rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.contact-form .label {
+  font-weight: 600;
+}
+/* Pseudoelements decoratius per al formulari */
+.contact-form .field label::before {
+  content: "▪ ";
+  color: var(--brand);
+}
+
+
