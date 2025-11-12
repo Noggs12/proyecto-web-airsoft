@@ -39,7 +39,7 @@
 
       <!-- Formulari amb inputs diversos i atributs required/disabled -->
       <section>
-        <form class="contact-form" action="#" method="post" aria-describedby="formInfo">
+        <form id="contactForm" class="contact-form" action="#" method="post" aria-describedby="formInfo">
           <div id="formInfo" class="sr-only">Los campos marcados con * son obligatorios.</div>
 
           <div class="field">
@@ -72,16 +72,18 @@
             <textarea id="message" name="message" required rows="5" placeholder="Escribe tu mensaje"></textarea>
           </div>
 
-          <div class="field">
+          <div class="field field--subscription">
             <span class="label">Suscripción</span>
-            <label class="option">
-              <input type="checkbox" name="subscribe" checked />
-              Quiero recibir novedades
-            </label>
-            <label class="option">
-              <input type="checkbox" name="vip" disabled />
-              Modo VIP (no disponible)
-            </label>
+            <div class="option-group" role="group" aria-label="Preferencias de suscripción">
+              <label class="option">
+                <input type="checkbox" name="subscribe" checked />
+                Quiero recibir novedades
+              </label>
+              <label class="option">
+                <input type="checkbox" name="vip" disabled />
+                Modo VIP <span class="option-note">(no disponible)</span>
+              </label>
+            </div>
           </div>
 
           <div class="actions">
@@ -90,6 +92,13 @@
           </div>
         </form>
       </section>
+
+      <div id="formToast" class="form-toast" role="status" aria-live="assertive" aria-hidden="true">
+        <div class="form-toast__content">
+          <p class="form-toast__message">Tu mensaje se ha enviado correctamente.</p>
+          <button type="button" class="form-toast__close" aria-label="Cerrar aviso">&times;</button>
+        </div>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -98,6 +107,7 @@
       </div>
     </footer>
 
+    <script src="assets/js/contact.js" type="module"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
